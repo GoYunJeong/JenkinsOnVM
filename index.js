@@ -4,7 +4,7 @@ const app = express();
 var server = http.createServer(app);
 
 app.get('/', function(req, res){
-    res.send('I like IU!');
+    res.send('I like IU!00000000000000000');
 });
 
 app.get('/start', function(req, res){
@@ -12,5 +12,6 @@ app.get('/start', function(req, res){
 });
 
 server.listen(3000, '127.0.0.1', function(){
+    console.log('Server listen on port!'+ server.address().port);
     console.log('Server listen on port!'+ server.address().port);
 });
